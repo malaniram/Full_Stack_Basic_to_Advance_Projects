@@ -1,0 +1,99 @@
+:root {
+	/* trying various background colors and images and gradients */
+	/* --background-image: linear-gradient(-90deg, #2E3192 , #1BFFFF); */
+	/* --background-image: linear-gradient(-90deg, #D4145A , #FBB03B); */
+	/* --background-image: linear-gradient(-90deg, #662D8C , #ED1E79); */ /* best one till now */
+	/* --background-image: linear-gradient(-90deg, #FF512F , #DD2476); */
+	/* --background-image: linear-gradient(-90deg, #C33764 , #1D2671); */ /* suitable for the text */
+	/* --background-image: linear-gradient(90deg, #764BA2 , #667EEA); */
+	/* trying other combinations */
+	/* --background-image: linear-gradient(90deg, #8E0E00 , #1F1C18); */ /* it was also looking decent */
+	/* --background-image: linear-gradient(90deg, #fc00ff , #00dbde); */
+
+	/* now trying combination of 3 colors */
+	/* --background-image: linear-gradient(90deg,#833ab4, #fd1d1d, #fcb045); */
+	/* --background-image: linear-gradient(90deg,#21D4FD, #B721FF); */
+	/* --background-image:url("background_image/2725544.jpg"); */
+	/* triend all the above gradients, finally liked the gradient vectored image */
+	
+	--music-themes-background-image: linear-gradient(
+		90deg,
+		#833ab4,
+		#fd1d1d,
+		#fcb045
+	);
+}
+body {
+	background-color: rgb(8 8 38);
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+/* removing margin for all the textual elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+/* removing all the styles from the links and formatting them white */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* -------------Navigation Bar------------- */
+
+.favs {
+    animation: flexible 2s ease-in-out infinite;
+    perspective: 10000px;
+    transform-style: preserve-3d;
+}
+
+/* ----------------------Main--------------------- */
+
+main {
+    width: 100%;
+    padding: 0% 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: all ease-in-out 1s;
+}
+
+.aside {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-1 {
+    width: 70%;
+    height: 86vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.section-1::-webkit-scrollbar {
+    display: none;
+}
+ /* Carousel  */
+ .carousel {
+    position: absolute;
+    left: 4%;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    justify-content: space-around;
+ }
+
+ .carousel img {
+	height: 15vw;
+	width: 22.5vw;
+	transition: all cubic-;
+ }
